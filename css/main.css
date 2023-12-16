@@ -8,7 +8,7 @@ html{
 }
 
 body {
-    font-family: '"TT Commons';
+    font-family: 'TT Commons';
     font-style: normal; 
     margin: 0 auto;
 }
@@ -43,7 +43,7 @@ body {
 
 .txt1sc {
     color: #FFF;
-    font-family: 'TT Commons Med';
+    font-family: 'TT Commons';
     font-size: 1.7vw;
     font-style: normal;
     font-weight: 500;
