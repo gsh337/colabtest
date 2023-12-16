@@ -1,0 +1,591 @@
+
+html{ 
+    box-sizing: border-box; 
+} 
+ 
+*, *::after, *::before { 
+    box-sizing: inherit; 
+}
+
+body {
+    font-family: '"TT Commons';
+    font-style: normal; 
+    margin: 0 auto;
+}
+
+
+
+.wrapper {
+    display: block;
+    height: fit-content;
+}
+
+/* ПЕРВЫЙ ЭКРАН */
+.firstscreen {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto;
+}
+
+
+/* БЛОК С КОМАРАМИ */
+.msq-text {
+    height: 50vw;
+    width: 48.4vw;
+    background-color: #E86229;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.txt1sc {
+    color: #FFF;
+    font-family: 'TT Commons Med';
+    font-size: 1.7vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 80%;
+    position: absolute;
+    z-index: 1;
+}
+
+
+.kkk {
+    padding-top: 0px;
+    padding-left: 0px;
+    position: absolute;
+    z-index: 2;
+    animation-name: k-move;
+    animation-duration: 50ms;
+    animation-iteration-count: infinite;
+    width: 98%;
+}
+
+.kkk:hover {
+    padding-top: 0px;
+    padding-left: 0px;
+    position: absolute;
+    z-index: 2;
+    animation: none;
+}
+
+@keyframes k-move {
+    from {
+        padding-top: 0px;
+        padding-left: 0px;
+    }
+    25% {
+        padding-top: 3px;
+        padding-left: 0px;
+    }
+    50% {
+        padding-top: 3px;
+        padding-left: 3px;
+    }
+    50% {
+        padding-top: 0px;
+        padding-left: 3px;
+    }
+    to {
+        padding-top: 0px;
+        padding-left: 0px;
+    }
+}
+
+/* ОБЬЕДИНЯЮЩИЙ */
+.forightblocks {
+    display: block;
+    margin: 10px;
+    width: 48vw;
+    height: 50vw;
+}
+
+/* БЛОК С ГРАДИЕНТОМ */
+.top1sc {
+    width: 48.4vw;
+    height: 12vw;
+    border-radius: 10px;
+    background: #E86229;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+@keyframes gradmove1 {
+    from {
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.30) 0.48%, rgba(255, 255, 255, 0.00) 100%);
+    }
+    50% {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.30) 0.48%, rgba(255, 255, 255, 0.00) 100%);
+    }
+    to {
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.30) 0.48%, rgba(255, 255, 255, 0.00) 100%);
+    }
+}
+
+@keyframes gradmove2 {
+    from {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.30) 0.56%, rgba(255, 255, 255, 0.00) 100%);
+    }
+    50% {
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.30) 0.56%, rgba(255, 255, 255, 0.00) 100%);
+    }
+    to {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.30) 0.56%, rgba(255, 255, 255, 0.00) 100%);
+    }
+}
+
+.rectang1 {
+    width: 80px;
+    height: 217px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.30) 0.48%, rgba(255, 255, 255, 0.00) 100%);
+    padding-left: 10px;
+    position: relative;
+    animation-name: gradmove1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    transition: linear-gradient 0.5s ease-in-out;
+}
+
+.rectang2 {
+    width: 80px;
+    height: 217px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.30) 0.56%, rgba(255, 255, 255, 0.00) 100%);
+    padding-left: 10px;
+    position: relative;
+    animation-name: gradmove2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    transition: linear-gradient 0.5s ease-in-out;
+
+}
+
+/* ПЕРВЫЙ ЭКРАН-hide */
+.firstscreen-hide {
+    display: block;
+    justify-content: flex-start;
+    padding-top: 10px;
+}
+
+.hide1 {
+    display: flex;
+}
+
+/* БЛОК С ТИПОГРАФИКОЙ */
+.typo1sc {
+    width: 48.4vw;
+    height: 37.4vw;
+    border-radius: 10px;
+    background: #EFEFEF;
+    position: relative;
+    overflow: hidden;
+}
+
+.typoanim {
+    width: 100%;
+    height: 100%;
+    transition: all 0.2s;
+}
+
+.typoanim:hover {
+    transform: scale(1.02);
+    animation: 1s ease-in;
+    transition: all 0.5s;
+}
+
+/* БЕГУЩАЯ СТРОКА 1 */
+.ticker1 {
+    position: relative;
+    height: 80px;
+    overflow: hidden;
+    width: 100%;
+}
+.erm{
+    height: 80px;
+    animation: erm 3s linear infinite;
+    white-space: nowrap;
+}
+
+@keyframes erm { 
+    0% {transform: translateX(1300px)} 
+    100% {transform: translateX(-1500px)} 
+}
+
+
+  
+
+/* БЛОК ЛОТО */
+.loto {
+    display: flex;
+    flex-wrap: wrap;
+    width: 48.6vw;
+    height: fit-content;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.box {
+    background-color:#EFEFEF;
+    width: 15.543vw;
+    height: 15.543vw;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.box:hover {
+    background-color:#E86229;
+    width: 15.543vw;
+    height: 15.543vw;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.box1 {
+    background-color:#E86229;
+    width: 15.543vw;
+    height: 15.543vw;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+
+.round {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    background: #FFF;
+    margin: 10%;
+
+}
+
+.logoimg {
+    margin-top: 40%;
+    margin-left: 15%;
+    width: 73%;
+    width: 73%;
+}
+
+
+/* ОБЩИЙ БЛОК ДЛЯ ВТОРОГО ЭКРАНА */
+.secondscreen {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* БЛОК С КАРТИНКОЙ */
+.leftgif {
+    width: 48.9vw;
+    height: 47.9vw;
+    background-color:#E86229;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 8px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.gif1 {
+    width: 105%;
+    height: 105%;
+    border-radius: 10px;
+    padding-left: -10px;
+}
+
+.gif1:hover {
+    transform: scale(1.02);
+    animation: 1s ease-in;
+    transition: all 0.5s;
+}
+
+.ticker3 {
+    background-color: #202020;
+    height: 5vw;
+    width: 100vw;
+    overflow: hidden;
+    margin-top: 10px;
+    white-space: nowrap;
+   
+  }
+
+  .ticker4 {
+    background-color: #202020;
+    height: 5vw;
+    width: 100vw;
+    overflow: hidden;
+    margin-top: 10px;
+    white-space: nowrap;
+   
+  }
+  
+  @keyframes text-move {
+        0% {transform: translateX(0)}
+        100% {transform: translateX(-1500px)}
+      
+  }
+
+
+.paragraph {
+    color: #FFF;
+    font-family: 'TT Commons';
+    font-size: 4vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 108.5%;
+    text-transform: uppercase;
+    padding-top: 5px;
+    white-space: nowrap;
+    animation: text-move 3s infinite linear;
+}
+
+
+/* ИНТЕРАКТИВНЫЙ БЛОК */
+.interactive {
+    width: 97.4vw;
+    height: 50vw;
+    border-radius: 10px;
+    background: #E86229;
+    margin: 10px;
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background-color: white;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 99999999; /* so that it stays on top of all other elements */
+  }
+
+  
+
+/* БЛОК С КРУЖКАМИ */
+.roundsss {
+    position: relative;
+    width: 97.4vw;
+    height: 13.45vw;
+    border-radius: 10px;
+    background: #FBE7DE;;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.a {
+    animation: a 3s infinite ease-in;
+    z-index: 1;
+    position: absolute;
+    overflow: hidden;
+    width: 10vw;
+    height: 10vw;
+    background-color: #E86229;
+    opacity: 100%;
+    border-radius: 100%;
+    margin: 0 auto;
+    margin-left: 1500px;
+}
+
+
+.b {
+    animation: b 3s infinite ease-in;
+    z-index: 2;
+    position: absolute;
+    overflow: hidden;
+    width: 10vw;
+    height: 10vw;
+    background-color: #E86229;
+    opacity: 80%;
+    border-radius:100%;
+    margin: 0 auto;
+    margin-left: 1500px;
+}
+
+.c {
+    animation: c 3s infinite ease-in;
+    z-index: 3;
+    position: absolute;
+    overflow: hidden;
+    width: 10vw;
+    height: 10vw;
+    background-color: #E86229;
+    opacity: 70%;
+    border-radius: 100%;
+    margin: 0 auto;
+    margin-left: 1500px;
+}
+
+.d {
+    animation: d 3s infinite ease-in;
+    z-index: 4;
+    position: absolute;
+    overflow: hidden;
+    width: 10vw;
+    height: 10vw;
+    background-color: #E86229;
+    opacity: 60%;
+    border-radius: 100%;
+    margin: 0 auto;
+    margin-left: 1500px;
+}
+
+.e {
+    animation: e 3s infinite ease-in;
+    z-index: 5;
+    position: absolute;
+    overflow: hidden;
+    width: 10vw;
+    height: 10vw;
+    background-color: #E86229;
+    opacity: 50%;
+    border-radius: 100%;
+    margin: 0 auto;
+    margin-left: 1500px;
+}
+
+.f {
+    animation: f 3s infinite ease-in;
+    z-index: 6;
+    position: absolute;
+    overflow: hidden;
+    width: 10vw;
+    height: 10vw;
+    background-color: #E86229;
+    opacity: 40%;
+    border-radius: 100%;
+    margin: 0 auto;
+    margin-left: 1500px;
+}
+
+.g {
+    animation: g 3s infinite ease-in;
+    z-index: 7;
+    position: absolute;
+    overflow: hidden;
+    width: 10vw;
+    height: 10vw;
+    background-color: #E86229;
+    opacity: 20%;
+    border-radius: 100%;
+    margin: 0 auto;
+    margin-left: 1500px;
+}
+
+@keyframes a {
+    from {
+        scale: 1;
+    }
+    50% {
+        scale: 4; 
+    }
+    to {
+        scale: 1; 
+    }
+}
+
+@keyframes b {
+    from {
+        scale: 1;
+    }
+    50% {
+        scale: 8; 
+    }
+    to {
+        scale: 1; 
+    }
+}
+
+@keyframes c {
+    from {
+        scale: 1;
+    }
+    50% {
+        scale: 12; 
+    }
+    to {
+        scale: 1; 
+    }
+
+}
+
+@keyframes d {
+    from {
+        scale: 1;
+    }
+    50% {
+        scale: 16; 
+    }
+    to {
+        scale: 1; 
+    }
+}
+@keyframes e {
+    from {
+        scale: 1;
+    }
+    50% {
+        scale: 20; 
+    }
+    to {
+        scale: 1; 
+    }
+}
+@keyframes f {
+    from {
+        scale: 1;
+    }
+    50% {
+        scale: 24; 
+    }
+    to {
+        scale: 1; 
+    }
+}
+@keyframes g {
+    from {
+        scale: 1;
+    }
+    50% {
+        scale: 28; 
+    }
+    to {
+        scale: 1; 
+    }
+}
+
+
+/* БЛОК-ПОДВАЛ */
+.footer {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 98.4vw;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.par {
+    color: #000;
+    font-family: 'TT Commons';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.hselogo {
+    width: 15%;
+    height: 15%;
+}

@@ -1,0 +1,13 @@
+@font-face{
+    font-family:"TT Commons";
+    src: url('/css/fonts/TT_Commons_semi_bold.ttf') format("truetype"); 
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face { 
+    font-family:"TT Commons Med";
+    font-style: normal;
+    font-weight: 500;
+    src: url('/css/fonts/TT_Commons_medium.ttf') format("truetype");
+}

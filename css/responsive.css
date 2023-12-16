@@ -1,0 +1,230 @@
+
+/* DESKTOP 1920px */
+@media screen and (max-width: 1920px) {
+    .firstscreen-hide {
+        display: none;
+       }
+       .ticker1-1 {
+        display: none;
+       }
+}
+
+/* DESKTOP 1440px */
+@media screen and (max-width: 1440px) {
+   .box {
+    width: 15.6vw;
+    height: 15.6vw;
+   }
+   .box:hover {
+    width: 15.6vw;
+    height: 15.6vw;
+   }
+   .box1 {
+    width: 15.6vw;
+    height: 15.6vw;
+   }
+   .loto {
+    width: 48.9vw;
+   }
+   .firstscreen-hide {
+    display: none;
+   }
+   .ticker1-1 {
+    display: none;
+   }
+}
+
+/* TABLET */
+@media screen and (max-width: 834px) {
+    .ticker1 {
+        display: none;
+    }
+    .firstscreen {
+        display: none;
+    } 
+    .firstscreen-hide {
+        display: block;
+        margin-left: 5px;
+        gap: 5px;
+        padding-top: 0px;
+       }
+
+    .typo1sc {
+        width: 97.3vw;
+        height: 70vw;
+    }
+    /* див в котором лежит блок с комарами */
+    .msq-text {
+        height: 25vw;
+        margin-top: 0vw;
+        margin-left: 5px
+    }
+    .hide1 {
+        padding-top: 5px;
+    }
+    /* блок с градиентом */
+    .top1sc {
+        height: 25vw;
+        margin-bottom: 5px;
+    }
+    .loto {
+        width: 49vw;
+        margin-top: 5px;
+
+       }
+
+    .leftgif {
+        width: 48.4vw;
+        height: 47.9vw;
+        margin-left: 0px;
+        margin-top: 8px;
+    }
+    
+    .box {
+        margin: 2.5px;
+        transition: 0s;
+    }
+    .box:hover {
+        margin: 2.5px;
+    }
+    .box1 {
+        margin: 2.5px;
+        transition: 0s;
+    }
+    .box1:hover {
+        margin: 2.5px;
+    }
+
+    @keyframes text-move {
+        0% {transform: translateX(0)}
+        100% {transform: translateX(-900px)}
+    }
+
+    .ticker3 {
+        margin-top: 0px;
+    }
+    .interactive {
+        display: none;
+    }
+    .ticker4 {
+        display: none;
+    }
+
+    .roundsss {
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+   
+    .a, .b, .c, .d, .e, .f, .g {
+        margin-left: 900px;
+    }
+
+    .footer {
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+    .par {
+        font-size: 18px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 360px) {
+    .hide1 {
+        display: block;
+    }
+    .top1sc {
+        width: 96vw;
+    }
+    .msq-text {
+        width: 96vw;
+        height: 80vw;
+        margin-left: 0px;
+    }
+    .txt1sc {
+        width: 90%;
+        font-size: 4vw;
+    }
+
+    .hide2 {
+        padding-top: 5px;
+    }
+    .typo1sc {
+        width: 96vw;
+        height: 60vw;
+    }
+    .secondscreen {
+        display: block;
+    }
+    .loto {
+        width: 96vw;
+        margin-top: 5px;
+
+       }
+
+    .leftgif {
+        width: 96vw;
+        height: 96vw;
+        margin-left: 0px;
+        margin-top: 8px;
+    }
+    
+    .box {
+        margin: 2.5px;
+        transition: 0s;
+        width: 30.6vw;
+        height: 30.6vw;
+    }
+    .box:hover {
+        margin: 2.5px;
+        width: 30.6vw;
+        height: 30.6vw;
+    }
+    .box1 {
+        margin: 2.5px;
+        transition: 0s;
+        width: 30.6vw;
+        height: 30.6vw;
+    }
+    .box1:hover {
+        margin: 2.5px;
+        width: 30.6vw;
+        height: 30.6vw; 
+    }
+    .leftgif {
+        width: 96vw;
+        height: 96vw;
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-left: 05px;
+    }
+
+    .ticker3 {
+        height: 10vw;
+        margin-top: 5px;
+      }
+
+    .paragraph {
+        font-size: 7vw;
+    }
+
+    .roundsss {
+        margin-top: 5px;
+        margin-left: 5px;
+        height: 40vw;
+    }
+   
+    .a, .b, .c, .d, .e, .f, .g {
+        margin-left: 400px;
+        margin-top: 50px;
+    }
+
+    .par {
+        font-size: 16px;
+    }
+
+    .hselogo {
+        width: 30%;
+        height: 30%;
+    } 
+}
